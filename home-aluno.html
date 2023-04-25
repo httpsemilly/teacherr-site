@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teacherr - Home</title>
+        <!-- CSS links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/home-aluno.css">
+    </head>
+    <body>
+        <!-- header (cabeçalho) da página -->
+        <header>
+            <div id="logo">
+                <img src="./assets/images/logo.png" alt="Logo do site teacherr" id="logo-img">
+                <h1 id="logo-name">teacherr</h1>
+            </div>
+            <div id="links-nav">
+                <a href="#">Encontre professores</a>
+                <a href="#">Publique uma proposta</a>
+            </div>
+            <div id="header-menu">
+                <form action="busca.html">
+                    <input type="search" name="search" id="search" placeholder="Buscar">
+                    <button type="submit">
+                        <img src="./assets/images/icon-lupa.svg" alt="">
+                    </button>
+                </form>
+                <button id="button-message"></button>
+                <button id="button-notification"></button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./assets/images/icon-fem.png" alt="" id="button-img">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Editar perfil</a></li>
+                      <li><a class="dropdown-item" href="landingpage.html">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- main - conteúdo principal da página -->
+        <main>
+            <!-- mensagem de boas-vindas ao usuário -->
+            <div id="mensagem-cumprimento">
+                <h2 id="cumprimento-usuário">Bom dia, <span>Luiza Ferreira</span>.</h2>
+            </div>
+            <div id="container">
+                <!-- seção de recomendações -->
+                <section id="recomendacoes">
+                    <h3>Recomendações</h3>
+                    <div id="cards-profs">
+                        <div class="card">
+                            <div class="prof-infos">
+                              <div class="prof-img">
+                                <img src="./assets/images/professor-1.jpg" alt="Foto do professor">
+                              </div>
+                              <div class="prof-dados">
+                                <h4 class="prof-nome">Luiz A. Souza</h4>
+                                <p class="prof-formacao">Professor de História</p>
+                                <p class="prof-localizacao">Salvador, BA</p>
+                              </div>
+                            </div>
+                            <div class="prof-avaliacao">
+                              <p class="num-estudantes">294 estudantes</p>
+                              <p class="avaliacao">
+                                <img src="./assets/images/icon-estrela.svg" alt="Estrela dourada">
+                                  5.0 <span>(278)</span>
+                              </p>
+                            </div>
+                            <div class="prof-especializacao">
+                              <button class="topico">Guerra Fria</button>
+                              <button class="topico">Revolução Russa</button>
+                              <button class="topico">Imperialismo</button>
+                              <button class="mais-topicos">...</button>
+                            </div>
+                            <div class="mais-infos">
+                              <h5 class="taxa-horaria">R$47/hr</h5>
+                              <button class="btn btn-primary" type="button">Ver perfil</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="prof-infos">
+                                <div class="prof-img">
+                                    <img src="./assets/images/professor-2.jpg" alt="Foto do professor">
+                                </div>
+                                <div class="prof-dados">
+                                    <h4 class="prof-nome">Ana Clara Vieira</h4>
+                                    <p class="prof-formacao">Professora de História</p>
+                                    <p class="prof-localizacao">Salvador, BA</p>
+                                </div>
+                            </div>
+                            <div class="prof-avaliacao">
+                                <p class="num-estudantes">244 estudantes</p>
+                                <p class="avaliacao">
+                                    <img src="./assets/images/icon-estrela.svg" alt="Estrela dourada">
+                                    4.9 <span>(241)</span>
+                                </p>
+                            </div>
+                            <div class="prof-especializacao">
+                                <button class="topico">Guerra Fria</button>
+                                <button class="topico">Fascismo</button>
+                                <button class="topico">1ª Guerra Mundial</button>
+                                <button class="mais-topicos">...</button>
+                            </div>
+                            <div class="mais-infos">
+                                <h5 class="taxa-horaria">R$50/hr</h5>
+                                <button class="btn btn-primary" type="button">Ver perfil</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="prof-infos">
+                                <div class="prof-img">
+                                    <img src="./assets/images/professor-4.jpg" alt="Foto do professor">
+                                </div>
+                                <div class="prof-dados">
+                                    <h4 class="prof-nome">Fernanda Castro</h4>
+                                    <p class="prof-formacao">Professora de História</p>
+                                    <p class="prof-localizacao">Salvador, BA</p>
+                                </div>
+                            </div>
+                            <div class="prof-avaliacao">
+                                <p class="num-estudantes">192 estudantes</p>
+                                <p class="avaliacao">
+                                    <img src="./assets/images/icon-estrela.svg" alt="Estrela dourada">
+                                    4.9 <span>(188)</span>
+                                </p>
+                            </div>
+                            <div class="prof-especializacao">
+                                <button class="topico">Guerra Fria</button>
+                                <button class="topico">Brasil Colônia</button>
+                                <button class="topico">Era Vargas</button>
+                                <button class="mais-topicos">...</button>
+                            </div>
+                            <div class="mais-infos">
+                                <h5 class="taxa-horaria">R$50/hr</h5>
+                                <button class="btn btn-primary" type="button">Ver perfil</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="prof-infos">
+                                <div class="prof-img">
+                                    <img src="./assets/images/professor-7.jpg" alt="Foto do professor">
+                                </div>
+                                <div class="prof-dados">
+                                    <h4 class="prof-nome">Marcos E. Barbosa</h4>
+                                    <p class="prof-formacao">Professor de História</p>
+                                    <p class="prof-localizacao">Salvador, BA</p>
+                                </div>
+                            </div>
+                            <div class="prof-avaliacao">
+                                <p class="num-estudantes">340 estudantes</p>
+                                <p class="avaliacao">
+                                    <img src="./assets/images/icon-estrela.svg" alt="Estrela dourada">
+                                    4.8 <span>(336)</span>
+                                </p>
+                            </div>
+                            <div class="prof-especializacao">
+                                <button class="topico">Guerra Fria</button>
+                                <button class="topico">Imperialismo</button>
+                                <button class="topico">Oriente Médio</button>
+                                <button class="mais-topicos">...</button>
+                            </div>
+                            <div class="mais-infos">
+                                <h5 class="taxa-horaria">R$40/hr</h5>
+                                <button class="btn btn-primary" type="button">Ver perfil</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- seção agenda do dia -->
+                <section id="agenda">
+                    <h3>Agenda do dia</h3>
+                    <div id="agenda-diaria">
+                        <div class="card-horario1">
+                            <p class="hora">08:30 - 9:30</p>
+                            <div class="conteudo">
+                                <p class="disciplina">Aula de história com o professor Lucas Rodrigues</p>
+                                <h4 class="conteudo-aula">Características da Guerra Fria</h4>
+                            </div>
+                        </div>
+                        <div class="card-horario2">
+                            <p class="hora">10:00 - 11:00</p>
+                            <div class="conteudo">
+                                <p class="disciplina">Aula de física com a professora Cláudia B. Soares</p>
+                                <h4 class="conteudo-aula">Mudança de estado físico</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Script do Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

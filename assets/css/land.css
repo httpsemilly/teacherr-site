@@ -1,0 +1,302 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+/* Estilização geral */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    height: 100vh;
+}
+
+/* Estilização da header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    padding: 40px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo-img {
+    width: 35px;
+}
+
+#logo-name {
+    font-family: 'Open Sans';
+    font-size: 27px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+#links-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 30px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7364a3;
+}
+
+#acesso {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#cadastro {
+    background-color: #B4A5E4;
+    border-radius: 20px;
+    padding: 7px 30px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+#cadastro:hover {
+    background-color: #7364a3;
+}
+
+/*estilizaão do Main */
+
+#apresentacao {
+    display: flex;
+}
+
+#texto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+h2 {
+    margin-top: 55px;
+    margin-left: 40px;
+    color: #683567;
+    font-size: 80px;
+}
+
+#texto-container p {
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 40px;
+    margin-bottom: 0;
+    color: #757575;
+}
+
+#acesso-rapido {
+    display: flex;
+    width: 500px;
+    margin-top: 20px;
+}
+
+#saiba-mais {
+    background-color: white;
+    width: 200px;
+    padding: 10px;
+    margin-left: 40px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#cadastre-se {
+    background-color: #B4A5E4;
+    color: #FFFFFF;
+    width: 200px;
+    padding: 10px;
+    margin-left: 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#cadastre-se:hover {
+    background-color: #7364a3;
+}
+
+h3 {
+    color: #683567;
+    font-size: 47px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 50px;
+}
+
+/* Estilizaçao do pitch/carousel */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 70px;
+}
+
+.carousel-inner {
+    width: 400px;
+    height: 400px;
+}
+
+#carouselExampleDark {
+    margin-left: 50px;
+}
+
+#feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.pitch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pitch img {
+    width: 1200px;
+    margin-bottom: 70px;
+}
+
+
+/* Estilização do footer */
+
+footer {
+    width: 100%;
+    height: 370px;
+    background-color: #EDE9E9;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px 0 40px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #9c9c9c;
+}
+
+#newsletter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#footer-container #logo img, #footer-container #logo-name{
+    width: 30px;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#newsletter p {
+    color: #683567;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#newsletter-cadastro {
+    display: flex;
+    width: 350px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+#newsletter-cadastro input {
+    width: 100%;
+    padding: 7px 0;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+}
+
+#newsletter-cadastro input::placeholder {
+    color: #683567;
+}
+
+#newsletter-cadastro button {
+    background-color: #B4A5E4;
+    color: #FFFFFF;
+    font-weight: 500;
+    width: 200px;
+    padding: 7px 0;
+    border: none;
+    border-radius: 20px;
+}
+
+#newsletter-cadastro button:hover {
+    background-color: #7364a3;
+}
+
+#footer-links {
+    display: flex;
+    gap: 100px;
+    margin: 50px 30px 0 0;
+}
+
+#footer-links h5 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 40px;
+    padding: 20px 0;
+    font-weight: 500;
+}
+
+#footer-copyright p {
+    margin-bottom: 0;
+}
+
+#redes-sociais {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#redes-sociais ion-icon {
+    height: 22px;
+    width: 22px;
+}

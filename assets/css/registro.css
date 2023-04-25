@@ -1,0 +1,150 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+/* Estilização geral */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    height: 100vh;
+}
+
+/* Estilização da header */
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 70px;
+    padding: 40px;
+}
+
+#logo {
+    width: 35px;
+    height: 42px;
+}
+
+#logo-name {
+    font-family: 'Open Sans';
+    font-size: 27px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.cadastro h2 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #683567;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.boas-vindas-img {
+    width: 50%;
+}
+
+.boas-vindas-img img {
+    width: 100%;
+}
+
+#cadastro-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#name, #email, #senha {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    outline: none;
+}
+
+input[type="email"]::placeholder, input[type="password"]::placeholder, input[type="text"]::placeholder {
+    font-size: 18px;
+}
+
+#aceitar-termos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#aceitar-termos p {
+    margin-bottom: 0;
+    color: #683567;
+}
+
+#aceitar-termos a {
+    color: #683567;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#aceitar-termos a:hover {
+    color: #957de6;;
+}
+
+button {
+    background-color: #957de6;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #7364a3;
+}
+
+
+select {
+    width: 240px;
+    padding: 10px;
+    font-size: 18px;
+    color: #707070;
+    border-radius: 10px;
+    outline: none;
+    appearance: none;
+    background: url("../images/icon-seta.svg") no-repeat 202px center;
+    background-size: 14px;
+}
+
+#login {
+    display: flex;
+    gap: 5px;
+    color: #683567;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#login a {
+    color: #683567;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#login a:hover {
+    color: #957de6;;
+}
